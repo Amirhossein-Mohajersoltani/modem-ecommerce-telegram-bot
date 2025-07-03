@@ -1,7 +1,7 @@
 import pandas as pd
 from telegram import Update, InputFile
 from telegram.ext import ContextTypes
-from database import *
+from bot.core.database import *
 import json
 import os
 

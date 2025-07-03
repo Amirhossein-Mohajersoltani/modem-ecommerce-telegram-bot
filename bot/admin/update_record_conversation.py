@@ -1,8 +1,8 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes, ConversationHandler, MessageHandler, filters, CallbackQueryHandler, \
     CommandHandler
-from database import *
-from utils import *
+from bot.core.database import *
+from bot.core.utils import *
 
 
 database = Database()

@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import  ContextTypes
-from database import *
-from utils import *
+from bot.core.database import *
+from bot.core.utils import *
 
 
 database = Database()

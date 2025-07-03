@@ -3,6 +3,7 @@ from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ContextTypes, ConversationHandler
 import re
 import json
+from bot.core.database import Database
 
 
 
@@ -53,7 +54,6 @@ async def user_panel_break_conversation(update: Update, context: ContextTypes.DE
 #         reply_markup = create_admin_panel()
 
 async def admin_owner_panel_break_conversation(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    from database import Database
     database = Database()
     if database.is_owner(update.effective_chat.id):
         reply_markup = create_owner_panel()
